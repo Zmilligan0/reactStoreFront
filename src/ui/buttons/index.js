@@ -9,7 +9,10 @@ const Button = styled.button`
   padding: ${props => props.padding  || "0.5rem 2rem"};;
   color: ${props => props.color || "grey"};
   font-size: ${props => props.size  || "1rem"};;
- 
+  &:hover {
+    background-color: green;
+    cursor: pointer;
+  }
 `;
  
 const IconButton = styled.button`   

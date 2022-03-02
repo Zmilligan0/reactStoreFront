@@ -361,6 +361,12 @@ body {
  background-color: #fff;
 }
 
+.flex {
+  display:flex;
+  justify-content:space-between;
+  height: 90rem;
+}
+
 `
 
 export {GlobalStyles}

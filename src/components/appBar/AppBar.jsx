@@ -1,18 +1,33 @@
 import React from "react";
 
 import {IoNotificationsOutline} from "react-icons/io5";
+import {AiFillSetting, AiOutlineMail} from "react-icons/ai"
+import {BiUserCircle} from "react-icons/bi"
+import {Link} from 'react-router-dom'
 
-import {AppBarStyles, AppBarItem, AppBarItems} from './styles';
+
+import {AppBarStyles, AppBarItem, AppBarItems, BrandingName} from './styles';
 import {IconButton} from './../../ui/buttons';
+
 
 
 function AppBar (props){
     return(
         <AppBarStyles>
+            <BrandingName>Zach's store</BrandingName>
             <AppBarItems>
-                <AppBarItem>Branding</AppBarItem>
+                <AppBarItem><Link to="/">Sign Out</Link></AppBarItem>
                 <AppBarItem>
                     <IconButton><IoNotificationsOutline color="tomato" size="1.75rem"/></IconButton>
+                </AppBarItem>
+                <AppBarItem>
+                    <IconButton><AiFillSetting color="tomato" size="1.75rem"/></IconButton>
+                </AppBarItem>
+                <AppBarItem>
+                    <IconButton><BiUserCircle color="tomato" size="1.75rem"/></IconButton>
+                </AppBarItem>
+                <AppBarItem>
+                    <IconButton><AiOutlineMail color="tomato" size="1.75rem"/></IconButton>
                 </AppBarItem>
             </AppBarItems>
         </AppBarStyles>
