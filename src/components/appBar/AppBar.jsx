@@ -14,21 +14,22 @@ import {IconButton} from './../../ui/buttons';
 function AppBar (props){
     return(
         <AppBarStyles>
-            <BrandingName>Zach's store</BrandingName>
+            <BrandingName>Zach's Knives</BrandingName>
             <AppBarItems>
                 <AppBarItem><Link to="/">Sign Out</Link></AppBarItem>
                 <AppBarItem>
                     <IconButton><IoNotificationsOutline color="tomato" size="1.75rem"/></IconButton>
                 </AppBarItem>
                 <AppBarItem>
-                    <IconButton><AiFillSetting color="tomato" size="1.75rem"/></IconButton>
+                    <IconButton><AiOutlineMail color="red" size="1.75rem"/></IconButton>
                 </AppBarItem>
                 <AppBarItem>
-                    <IconButton><BiUserCircle color="tomato" size="1.75rem"/></IconButton>
+                    <IconButton><AiFillSetting color="grey" size="1.75rem"/></IconButton>
                 </AppBarItem>
                 <AppBarItem>
-                    <IconButton><AiOutlineMail color="tomato" size="1.75rem"/></IconButton>
+                    <IconButton><BiUserCircle color="black" size="1.75rem"/></IconButton>
                 </AppBarItem>
+                
             </AppBarItems>
         </AppBarStyles>
     )

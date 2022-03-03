@@ -19,5 +19,11 @@ const IconButton = styled.button`
         border: none;
         background-color: transparent;
 `;
+const SubmitButton = styled(Button)`
+    background-color: ${props => props.bgcolor || '#2563eb'};
+    color: ${props => props.color || '#f8fafc'}; 
+    font-weight: ${props => props.fw || '700'}; 
+    font-size: ${props => props.fs || '14px'};
+`
 
-export { Button, IconButton };
+export {Button, IconButton, SubmitButton}

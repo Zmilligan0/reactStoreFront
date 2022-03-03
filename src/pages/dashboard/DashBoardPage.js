@@ -1,7 +1,5 @@
 import React from "react";
 
-import {Link} from 'react-router-dom'
-
 import {AppBar} from "../../components/appBar";
 import {SideBar} from "../../components/sideBar";
 import {MainPanel} from "../../components/panels";

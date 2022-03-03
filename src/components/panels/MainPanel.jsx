@@ -1,6 +1,6 @@
 import React from "react";
 
-import {MainPanelStyles, MainPanelItem, MainPanelInner, MainPanelInnerTitle, MainPanelInnerBody} from './styles';
+import {MainPanelStyles, MainPanelItem, MainPanelInnerTitle, MainPanelInnerBody} from './styles';
 import {Button} from './../../ui/buttons';
 
 function MainPanel (props){
