@@ -1,5 +1,7 @@
 import React from "react";
 
+import {signOut} from 'firebase/auth';
+import { auth } from "../../libs/firebase";
 import {IoNotificationsOutline} from "react-icons/io5";
 import {AiFillSetting, AiOutlineMail} from "react-icons/ai"
 import {BiUserCircle} from "react-icons/bi"
@@ -7,16 +9,21 @@ import {Link} from 'react-router-dom'
 
 
 import {AppBarStyles, AppBarItem, AppBarItems, BrandingName} from './styles';
-import {IconButton} from './../../ui/buttons';
+import {IconButton, Button} from './../../ui/buttons';
 
 
 
 function AppBar (props){
+
+    function onLogoutRequest(e){
+        signOut(auth)
+    }
+
     return(
         <AppBarStyles>
             <BrandingName>Zach's Knives</BrandingName>
             <AppBarItems>
-                <AppBarItem><Link to="/">Sign Out</Link></AppBarItem>
+                <AppBarItem><Button onClick={onLogoutRequest}>Sign out</Button></AppBarItem>
                 <AppBarItem>
                     <IconButton><IoNotificationsOutline color="tomato" size="1.75rem"/></IconButton>
                 </AppBarItem>

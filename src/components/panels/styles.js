@@ -1,33 +1,27 @@
 import styled from 'styled-components';
 
-const MainPanelStyles = styled.div`
-    width: 75%;
-    padding: 5rem;
-    padding-bottom: 0;
-    background-color: #f7f7f7;
+const PanelStyles= styled.section`
+flex:1;
+box-shadow: 0 0 2px 0 rgba(0,0,0,0.3) ;
+background-color: white ;
+border-radius:3px ;
+margin:1.5rem;
+  
 `;
 
-const MainPanelItem = styled.h1`
-    font-size: 1.75rem;
+const PanelHeader = styled.header`
+    h2{
+        background-color: #f8f8f8;
+        padding:0.5rem;
+        border-radius: 3px ;
+        border-bottom-left-radius:0;
+        border-bottom-right-radius:0 ;
+        color:#3f3f3f;
+    }
 `;
 
-const MainPanelInnerTitle = styled.div`
-    margin-top: 1rem;
-    padding: 1rem;
-    border: 1px solid grey;
-    border-radius: 1rem 1rem 0 0;
-    background-color: white;
+const PanelBody = styled.div`
+    margin: ${props => props.margin || " 3rem"};
 `;
 
-const MainPanelInnerBody = styled.div`
-    padding: 1rem;
-    border: 1px solid grey;
-    border-top: none;
-    height: 600px;
-    border-radius: 0 0 1rem 1rem;
-    background-color: white;
-`;
-
-
-
-export {MainPanelStyles, MainPanelItem, MainPanelInnerTitle, MainPanelInnerBody};
+export {PanelStyles, PanelBody, PanelHeader}

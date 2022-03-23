@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import {SideBarStyles, SideBarItem, SideBarItems} from './styles';
 
@@ -7,8 +8,12 @@ function SideBar (props){
         
         <SideBarStyles>
             <SideBarItems>
-                <SideBarItem>Dashboard</SideBarItem>
-                <SideBarItem>Vendors</SideBarItem>
+                <SideBarItem>
+                    <Link to="/dashboard">View All Products</Link>
+                </SideBarItem>
+                <SideBarItem>
+                    <Link to="add">Add Products</Link>
+                </SideBarItem>
                 <SideBarItem>Users</SideBarItem>
                 <SideBarItem>Categories</SideBarItem>
                 <SideBarItem>Products</SideBarItem>
@@ -18,7 +23,6 @@ function SideBar (props){
                 <SideBarItem>Authentication</SideBarItem>
                 <SideBarItem>Icons</SideBarItem>
                 <SideBarItem>Other Pages</SideBarItem>
-                
             </SideBarItems>
         </SideBarStyles>
     )
