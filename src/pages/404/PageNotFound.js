@@ -3,7 +3,6 @@ import React, {useState} from "react";
 import {Link} from 'react-router-dom';
 import {onAuthStateChanged} from 'firebase/auth';
 import {auth} from '../../libs/firebase'
-import {Button} from './../../ui/buttons';
 import { Container, Heading, InnerContainer, BrandingName} from "./styles";
 
 function PageNotFound (props){

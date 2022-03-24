@@ -1,1 +1,1 @@
-export {default as  ProductImageDropbox} from './ProductImageDropbox'
+export {default as  ProductImageDropBox} from './ProductImageDropBox'

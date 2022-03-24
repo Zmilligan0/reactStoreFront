@@ -1,12 +1,23 @@
 import React from 'react';
 
-import {ProductEditorStyles} from './styles'
+import { ProductDataEntryForm } from './../ProductDataEntryForm';
+import { ProductPreview } from './../ProductPreview';
+import {ProductEditorStyles} from './styles';
 
-function ProductEditor ({children, ...props})  {
+function ProductEditor ({children, productName, productPrice, productImage, handleProductName, handleProductPrice, setProductImage, ...props})  {
   return (
         <ProductEditorStyles  {...props}>
-           <h2>ProductEditor Component</h2>
-           {children}
+           <ProductDataEntryForm 
+           handleProductName={handleProductName}
+           handleProductPrice={handleProductPrice}
+           setProductImage={setProductImage}
+           />
+
+           <ProductPreview 
+           productName={productName}
+           productPrice={productPrice}
+           productImage={productImage}
+           />
 
         </ProductEditorStyles>
   )

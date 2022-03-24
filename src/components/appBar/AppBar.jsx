@@ -5,7 +5,6 @@ import { auth } from "../../libs/firebase";
 import {IoNotificationsOutline} from "react-icons/io5";
 import {AiFillSetting, AiOutlineMail} from "react-icons/ai"
 import {BiUserCircle} from "react-icons/bi"
-import {Link} from 'react-router-dom'
 
 
 import {AppBarStyles, AppBarItem, AppBarItems, BrandingName} from './styles';
