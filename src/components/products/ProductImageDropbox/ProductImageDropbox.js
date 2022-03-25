@@ -8,7 +8,7 @@
         const path = acceptedFiles[0] ;
         
         setProductImage(URL.createObjectURL(path))
-        
+        // eslint-disable-next-line react-hooks/exhaustive-deps
       }, [])
       const {
         getRootProps,
@@ -31,4 +31,4 @@
      )
  }
  
- export default ProductImageDropbox 
+ export default ProductImageDropbox; 
