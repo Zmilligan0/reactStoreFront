@@ -1,9 +1,9 @@
  import React, {useCallback} from 'react'
  import {useDropzone} from 'react-dropzone'
- import {ProductImageDropBoxStyles} from './styles';
+ import {ProductImageDropboxStyles} from './styles';
 
 
- function ProductImageDropBox  ({setProductImage, ...props}){
+ function ProductImageDropbox  ({setProductImage, ...props}){
     const onDrop = useCallback(acceptedFiles => {
         const path = acceptedFiles[0] ;
         
@@ -21,14 +21,14 @@
 
      return( 
       
-        <ProductImageDropBoxStyles {...getRootProps({isFocused, isDragAccept, isDragReject})}>
+        <ProductImageDropboxStyles {...getRootProps({isFocused, isDragAccept, isDragReject})}>
           <input {...getInputProps()} />
           <p>Product Image Upload</p>
-        </ProductImageDropBoxStyles>
+        </ProductImageDropboxStyles>
        
        
       
      )
  }
  
- export default ProductImageDropBox 
+ export default ProductImageDropbox 

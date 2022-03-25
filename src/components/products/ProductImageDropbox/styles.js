@@ -15,7 +15,7 @@ const getColor = (props) => {
     return '#eeeeee';
   }
   
-  const ProductImageDropBoxStyles = styled.div`
+  const ProductImageDropboxStyles = styled.div`
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -38,4 +38,4 @@ const getColor = (props) => {
   `;
  
 
-export {ProductImageDropBoxStyles}
+export {ProductImageDropboxStyles}
