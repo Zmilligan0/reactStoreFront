@@ -1,10 +1,11 @@
 import styled from "styled-components";
-
+//maybe add back if its funky
+//height: calc(100vh - 64px);
 const DashBoardStyles = styled.section`
-    height: calc(100vh - 64px);
-    min-height: 800px;
+    min-height: calc(100vh - 64px);
+    overflow: hidden;
     display:flex;
-    
+    background-color: #fcfffe;
 `
 
 export {DashBoardStyles}

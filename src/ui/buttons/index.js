@@ -10,7 +10,8 @@ const Button = styled.button`
   color: ${props => props.color || "grey"};
   font-size: ${props => props.size  || "1rem"};;
   &:hover {
-    background-color: green;
+    background-color: ${props => props.hbgcolor  || "green"};
+    color: ${props => props.hcolor  || "grey"};
     cursor: pointer;
   }
 `;

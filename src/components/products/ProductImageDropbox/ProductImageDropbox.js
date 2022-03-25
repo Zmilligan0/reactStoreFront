@@ -19,16 +19,10 @@
         isDragReject,
       } = useDropzone({ accept: 'image/jpeg,image/jpg,image/png', maxFiles:1, onDrop });
 
- 
-      
-   function workingThing(){
-     console.log("look")
-   }
-
      return( 
       
         <ProductImageDropBoxStyles {...getRootProps({isFocused, isDragAccept, isDragReject})}>
-          <input {...getInputProps()} onChange={workingThing} />
+          <input {...getInputProps()} />
           <p>Product Image Upload</p>
         </ProductImageDropBoxStyles>
        

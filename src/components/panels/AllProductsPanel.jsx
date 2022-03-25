@@ -1,17 +1,29 @@
 import React from "react";
 
-import {PanelStyles, PanelBody, PanelHeader} from './styles'
- 
+import { PanelStyles, PanelHeader, AllProductPanelBody } from './styles';
+
+import { ProductPreview } from "./../products/ProductPreview"
+
 function AllProductsPanel({ title, ...props }) {
   return (
-        <PanelStyles>
-          <PanelHeader>
-             <h2>{title  || "Display Panel"}</h2>
-          </PanelHeader>
-          <PanelBody>
+    <PanelStyles>
+      <PanelHeader color="blue">
+        <h2>{title || "Display Panel"}</h2>
+      </PanelHeader>
+      <AllProductPanelBody>
+        <ProductPreview/>
+        <ProductPreview/>
+        <ProductPreview/>
+        <ProductPreview/>
+        <ProductPreview/>
+        <ProductPreview/>
+        <ProductPreview/>
+        <ProductPreview/>
+        <ProductPreview/>
+        <ProductPreview/>
 
-          </PanelBody>
-        </PanelStyles>
+      </AllProductPanelBody>
+    </PanelStyles>
   );
 }
 

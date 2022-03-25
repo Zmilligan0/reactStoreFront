@@ -1,46 +1,73 @@
 import styled from 'styled-components';
 
 
-
-const ProductPreviewStyles  = styled.div`
+const ProductOuterContainer = styled.div`
+    display: flex;
+    flex-direction: column;
     max-width: 360px;
     align-self: stretch;
-    padding: 3rem 2rem;
-    background-color: #f8fafc
+    padding-top: 0rem;
+    background-color: #e4f7f4;
+    border-radius: 2rem;
+    border: 0.2rem black solid;
 `;
 
+const ProductMid  = styled.div`
+    max-width: 360px;
+    align-self: stretch;    
+    background-color: #e4f7f4; 
+`;
+//might have to add back
+//width: 300px
 const ProductImage = styled.div`
-    margin: 1rem auto 0;
-    width:300px;
+    margin: 0rem auto 0;
+    
     img{
         width: 100%;
         height: auto;
     }
 `;
 
-const ProductName = styled.h2`
-    font-size: 2.25rem;
+const ProductTop = styled.div`
+    background-color: #8ae6ff;   
+    border-radius: 1.8rem 1.8rem 0 0;
+    padding: 1rem;
+    border-bottom: 0.2rem black solid;
+`;
+
+const ProductBot = styled.div`
+    flex-grow : 1;  
+    background-color: #fafafa;
+    border-radius: 0 0 1.8rem 1.8rem;
+    padding: 1rem;
+    border-top: 0.2rem black solid;
+    font-weight:600;
+    
+`;
+
+const ProductName = styled.h2`    
     font-weight: 700;
     line-height: 2.5rem;
     letter-spacing: -0.5px;
-    color:#1e293b;
     word-wrap: break-word;
+    
 `;
 
 const ProductPrice = styled.p`
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 100;
     letter-spacing: -1px;
-    color:#64748b;
+    color:green;
     margin-top: -0.3rem;
     margin-bottom: 0.25rem;
+    text-align: right;
 
 `;
 
 const ProductDescription = styled.p`
     font-size: 13px;
-    color:#94a3b8
+    color:black;
 
 `;
 
-export {ProductPreviewStyles, ProductImage, ProductDescription, ProductPrice, ProductName}
+export {ProductMid, ProductBot, ProductOuterContainer, ProductImage, ProductDescription, ProductPrice, ProductName, ProductTop}

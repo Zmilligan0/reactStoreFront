@@ -16,7 +16,9 @@ const PanelHeader = styled.header`
         border-radius: 3px ;
         border-bottom-left-radius:0;
         border-bottom-right-radius:0 ;
-        color:#3f3f3f;
+        color: white;
+        background-color: ${props => props.color || "grey"};
+        
     }
 `;
 
@@ -24,4 +26,13 @@ const PanelBody = styled.div`
     margin: ${props => props.margin || " 3rem"};
 `;
 
-export {PanelStyles, PanelBody, PanelHeader}
+const AllProductPanelBody = styled.div`
+    margin: ${props => props.margin || " 3rem"};
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+    row-gap: 2rem;
+    
+`;
+
+export {PanelStyles, PanelBody, PanelHeader, AllProductPanelBody}

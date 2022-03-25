@@ -23,13 +23,17 @@ h1{
 `
 
 const Container = styled.div`
+    min-height: calc(100vh - 64px); 
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     height: 70rem;
     padding: 0rem auto;
     background-color: #f7f7f7;
+    
 `;
+
+
 
 const GraphicStyles = styled.section`
     max-width: 50%;
@@ -37,6 +41,7 @@ const GraphicStyles = styled.section`
     text-align: center;
     color: blue;
     font-size: 3rem;
+    
     img {
         border: 0.25rem solid black;
         border-radius: 0.45rem;
