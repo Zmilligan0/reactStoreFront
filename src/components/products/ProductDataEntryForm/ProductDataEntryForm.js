@@ -3,7 +3,7 @@ import React from 'react';
 import {ProductDataEntryFormStyles, ProductDescription, ProductImage, ProductName, ProductPrice} from './styles';
 import {Label, Input} from './../../../ui/forms';
 import {TextArea} from './../../../ui/forms/textarea';
-import { ProductImageDropBox } from '../ProductImageDropBox';
+import { ProductImageDropBox } from './../ProductImageDropBox';
 
 function ProductDataEntryForm ({children, handleProductName, handleProductPrice, handleProductDesc, setProductImage, ...props})  {
   return (
