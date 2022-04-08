@@ -4,7 +4,7 @@ import { ProductDataEntryForm } from './../ProductDataEntryForm';
 import { ProductPreview } from './../ProductPreview';
 import { ProductEditorStyles } from './styles';
 
-function ProductEditor({ children, productName, productPrice, productDesc, productImage, handleProductName, handleProductPrice, handleProductDesc, setProductImage, ...props }) {
+function ProductEditor({ children, productName, productPrice, handleSubmit, productDesc, productImage, handleProductName, handleProductPrice, handleProductDesc, setProductImage, ...props }) {
   return (
     <ProductEditorStyles  {...props}>
       <ProductDataEntryForm
@@ -12,6 +12,7 @@ function ProductEditor({ children, productName, productPrice, productDesc, produ
         handleProductPrice={handleProductPrice}
         handleProductDesc={handleProductDesc}
         setProductImage={setProductImage}
+        handleSubmit={handleSubmit}
       />
 
       <ProductPreview
